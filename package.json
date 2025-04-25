@@ -1,0 +1,24 @@
+{
+  "name": "bootcamp-cursor",
+  "version": "1.0.0",
+  "description": "Environnement JS préparé avec Node.js v22 LTS, Cursor IDE et Git.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnuKheru/cursor-saaS-sandbox.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnuKheru/cursor-saaS-sandbox/issues"
+  },
+  "homepage": "https://github.com/AnuKheru/cursor-saaS-sandbox#readme",
+  "devDependencies": {
+    "eslint": "^9.25.1"
+  }
+}
