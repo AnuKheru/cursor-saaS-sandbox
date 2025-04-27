@@ -1,20 +1,24 @@
+import globals from "globals";
+
 export default [
   {
-    env: {
-      browser: true,
-      es2021: true,
-      node: true,
+    languageOptions: {
+      globals: {
+        ...globals.browser,
+        ...globals.es2021,
+      },
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+        ecmaVersion: "latest",
+        sourceType: "module",
+      },
     },
-    extends: ["eslint:recommended"],
-    parserOptions: {
-      ecmaVersion: "latest",
-      sourceType: "module",
-    },
+    extends: ["eslint:recommended", "plugin:react/recommended"],
+    plugins: ["react"],
     rules: {
-      indent: ["error", 2],
-      "linebreak-style": ["error", "unix"],
-      quotes: ["error", "single"],
-      semi: ["error", "always"],
+      // Vos règles personnalisées
     },
   },
 ];
