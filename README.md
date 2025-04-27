@@ -5,8 +5,7 @@ Environnement JS préparé avec Node.js v22 LTS, Cursor IDE et Git.
 "hello World !"
 
 Pour répondre à la question 3 - Intégration Continue (CI) basique
-Voici le script : 
-
+Voici le script :
 
 name: Check Env
 
@@ -39,3 +38,5 @@ runs-on: ubuntu-latest
         run: |
           chmod +x check-env.sh
           ./check-env.sh
+
+![CI status](https://github.com/AnuKheru/cursor-saaS-sandbox/actions/workflows/ci.yml/badge.svg)

@@ -14,9 +14,6 @@ cursor --version || { echo "Erreur avec Cursor"; exit 1; }
 echo "Vérification de l'état du repo:"
 git status || { echo "Erreur lors de git status"; exit 1; }
 
-# Ouvrir Cursor IDE
-echo "Ouverture de Cursor IDE..."
-cursor . || { echo "Impossible d'ouvrir Cursor"; exit 1; }
 
 # Si tout est OK
 echo "Environment OK"
