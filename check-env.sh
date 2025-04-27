@@ -7,8 +7,6 @@ node --version || { echo "Erreur avec Node"; exit 1; }
 echo "Git version:"
 git --version || { echo "Erreur avec Git"; exit 1; }
 
-echo "Cursor version:"
-cursor --version || { echo "Erreur avec Cursor"; exit 1; }
 
 # Vérifier l'état du repo
 echo "Vérification de l'état du repo:"
