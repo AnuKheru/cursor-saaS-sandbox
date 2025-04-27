@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Afficher les versions
+echo "Node version:"
+node --version || { echo "Erreur avec Node"; exit 1; }
+
+echo "Git version:"
+git --version || { echo "Erreur avec Git"; exit 1; }
+
+echo "Cursor version:"
+cursor --version || { echo "Erreur avec Cursor"; exit 1; }
+
+# Vérifier l'état du repo
+echo "Vérification de l'état du repo:"
+git status || { echo "Erreur lors de git status"; exit 1; }
+
+# Ouvrir Cursor IDE
+echo "Ouverture de Cursor IDE..."
+cursor . || { echo "Impossible d'ouvrir Cursor"; exit 1; }
+
+# Si tout est OK
+echo "Environment OK"
